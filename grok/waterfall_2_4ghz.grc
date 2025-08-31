@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?grc format='1' created='3.10.7.0'?>
+<flow_graph>
+  <timestamp>2025-08-31T05:18:00</timestamp>
+  <block>
+    <key>options</key>
+    <param>
+      <key>id</key>
+      <value>waterfall_2_4ghz</value>
+    </param>
+    <param>
+      <key>title</key>
+      <value>2.4 GHz Waterfall Monitor</value>
+    </param>
+  </block>
+  <block>
+    <key>limesdr_source</key>
+    <param>
+      <key>id</key>
+      <value>limesdr_source_0</value>
+    </param>
+    <param>
+      <key>samp_rate</key>
+      <value>10e6</value>
+    </param>
+    <param>
+      <key>rf_gain</key>
+      <value>60</value>
+    </param>
+    <param>
+      <key>center_freq</key>
+      <value>2.405e9</value>
+    </param>
+    <param>
+      <key>device</key>
+      <value>LimeSDR-Mini</value>
+    </param>
+  </block>
+  <block>
+    <key>qtgui_waterfall_sink_c</key>
+    <param>
+      <key>id</key>
+      <value>qtgui_waterfall_sink_c_0</value>
+    </param>
+    <param>
+      <key>fft_size</key>
+      <value>1024</value>
+    </param>
+    <param>
+      <key>freq</key>
+      <value>2.405e9</value>
+    </param>
+    <param>
+      <key>samp_rate</key>
+      <value>10e6</value>
+    </param>
+    <param>
+      <key>title</key>
+      <value>2.4 GHz Waterfall</value>
+    </param>
+  </block>
+  <connection>
+    <source_block_id>limesdr_source_0</source_block_id>
+    <sink_block_id>qtgui_waterfall_sink_c_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+</flow_graph>
