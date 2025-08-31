@@ -1,0 +1,16 @@
+{
+  "global": {
+    "core:datatype": "cf32_le",
+    "core:sample_rate": 40000000,
+    "core:version": "1.0.0",
+    "core:description": "manual meta for wifi ch6 capture",
+    "core:author": "wofl"
+  },
+  "captures": [
+    {
+      "core:sample_start": 0,
+      "core:frequency": 2437000000
+    }
+  ],
+  "annotations": []
+}

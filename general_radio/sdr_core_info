@@ -1,0 +1,46 @@
+➜  build git:(master) ✗ LimeUtil --find -v          
+which LimeQuickTest && LimeQuickTest
+
+  * [LimeSDR Mini, media=USB 3.0, module=FT601, addr=24607:1027, serial=1DA1619BE219EE]
+
+/usr/local/bin/LimeQuickTest
+[ TESTING STARTED ]
+->Start time: Mon Aug 18 18:34:29 2025
+->LimeSuite version: 23.11.0-g1851b85f
+
+->Device: LimeSDR Mini, media=USB 3.0, module=FT601, addr=24607:1027, serial=1DA1619BE219EE, HW=7, GW=2.6
+  Serial Number: 1DA1619BE219EE
+ Chip temperature: 45 C
+
+[ Clock Network Test ]
+->REF clock test
+  Test results: 26500; 28057; 29551 - PASSED
+->VCTCXO test
+  Results : 6711036 (min); 6711070 (max) - PASSED
+->Clock Network Test PASSED
+
+[ FPGA EEPROM Test ]
+->Read EEPROM
+FPGA EEPROM not supported in v2
+->FPGA EEPROM Test PASSED
+
+[ LMS7002M Test ]
+->Perform Registers Test
+->External Reset line test
+  Reg 0x20: Write value 0xFFFD, Read value 0xFFFD
+  Reg 0x20: value after reset 0x0FFFF
+->LMS7002M Test PASSED
+
+[ RF Loopback Test ]
+->Configure LMS
+->Run Tests (TX_2 -> LNA_W):
+  CH0 (SXR=1000.0MHz, SXT=1005.0MHz): Result:(-28.7 dBFS, 5.00 MHz) - PASSED
+->Run Tests (TX_1 -> LNA_H):
+  CH0 (SXR=2100.0MHz, SXT=2105.0MHz): Result:(-24.1 dBFS, 5.00 MHz) - PASSED
+->RF Loopback Test PASSED
+
+=> Board tests PASSED <=
+
+Elapsed time: 1.25 seconds
+
+➜  build git:(master) ✗ 

@@ -1,0 +1,17 @@
+{
+  "device": "driver=lime",
+  "freq_hz": 868100000.0,
+  "rate_sps": 10000000.0,
+  "bandwidth_hz": 0.0,
+  "antenna": "LNAW",
+  "gain": "45",
+  "duration_s": 4.0,
+  "format": "cs16",
+  "num_complex_samples": 40042496,
+  "file": "/home/wofl/sdr/captures/lime_868100000Hz_10000000sps_4s_cs16_20250818T222815Z.cs16",
+  "timestamp_utc": "2025-08-18T22:28:21Z",
+  "agc": false,
+  "dc_correction": false,
+  "iq_balance": false,
+  "buflen_complex": 65536
+}
